@@ -28,7 +28,7 @@ SECRET_KEY = environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['sees-fyp.herokuapp.com/']
+ALLOWED_HOSTS = ['sees-fyp.herokuapp.com']
 
 
 # Application definition
