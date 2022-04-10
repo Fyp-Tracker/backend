@@ -147,4 +147,5 @@ DJOSER = {
     "USERNAME_RESET_CONFIRM_URL": "#/username/reset/confirm/{uid}/{token}",
     "ACTIVATION_URL": "#/activate/{uid}/{token}",
     "SOCIAL_AUTH_ALLOWED_REDIRECT_URIS": ["http://test.localhost/"],
+    "USER_CREATE_PASSWORD_RETYPE": True,
 }
