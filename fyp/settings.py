@@ -28,7 +28,7 @@ SECRET_KEY = environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['sees-fyp.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -53,6 +53,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
 ]
 
 ROOT_URLCONF = 'fyp.urls'
@@ -141,6 +143,8 @@ SIMPLE_JWT = {
     'UPDATE_LAST_LOGIN': True,
     'BLACKLIST_AFTER_ROTATION': False
 }
+
+CORS_ORIGIN_ALLOW_ALL = True
 
 DJOSER = {
     "SEND_ACTIVATION_EMAIL": False,
